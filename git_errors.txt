@@ -1,0 +1,54 @@
+
+# git push -u origin master
+
+
+The authenticity of host 'github.com (192.30.252.130)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.252.130' (RSA) to the list of known hosts.
+Enter passphrase for key '/root/.ssh/id_rsa': 
+
+ERRORS
+---------
+To git@github.com:nn987/Java_Files.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:nn987/Java_Files.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Merge the remote changes (e.g. 'git pull')
+hint: before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+SOLUTIONs
+-------------
+do this only After you clone a repository and commit a few changes of your own
+
+# git pull 
+
+Warning: Permanently added the RSA host key for IP address '192.30.252.128' to the list of known hosts.
+Enter passphrase for key '/root/.ssh/id_rsa': 
+warning: no common commits
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+From github.com:nn987/Java_Files
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream master origin/<branch>
+
+-------------
+# git fetch
+# git merge origin/master
+
+error Your local changes to the following files would be overwritten by merge:
+  git_errors.txt
+Please, commit your changes or stash them before you can merge.
+Aborting
+-------------
+
